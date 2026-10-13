@@ -191,6 +191,48 @@ line-height: 1.6;
 display: inline-block;
 min-width: 55px;
 }    
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-image {
+  flex: 0 1 44%;
+  min-width: 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-left: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}    
   </style>
 </head>
 <body>
