@@ -31,7 +31,23 @@
       gap: 20px;
     }
     .logo { font-size: 23px; font-weight: 800; color: #123c70; }
-    .menu { display: flex; gap: 25px; font-size: 14px; }
+    .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu a {
+  color: #34445b;
+  padding: 8px 0;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #2184c7;
+}
     .hero {
       background: linear-gradient(120deg, #102b50, #1765a0);
       color: white;
@@ -41,14 +57,34 @@
     h1 { font-size: clamp(36px, 5vw, 60px); line-height: 1.25; margin: 20px 0; }
     .hero p { color: #e0ebf8; font-size: 18px; max-width: 660px; }
     .button {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 13px 24px;
-      border-radius: 7px;
-      background: #fff;
-      color: #123c70;
-      font-weight: 700;
-    }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  padding: 13px 26px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #123c70;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: background 0.2s ease,
+              color 0.2s ease,
+              transform 0.2s ease;
+}
+
+.button:hover {
+  background: #eaf4ff;
+  color: #102b50;
+  transform: translateY(-1px);
+}
+
+.button:focus-visible,
+.menu a:focus-visible {
+  outline: 3px solid #2184c7;
+  outline-offset: 4px;
+}
     section { padding: 78px 0; }
     .section-title { font-size: 34px; margin: 0 0 12px; }
     .lead { color: #66758a; margin-bottom: 35px; }
