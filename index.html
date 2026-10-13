@@ -232,7 +232,33 @@ min-width: 55px;
   .hero-image img {
     max-width: 100%;
   }
-}    
+} 
+  .hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-image {
+  flex: 0 1 40%;
+  min-width: 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-left: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}  
   </style>
 </head>
 <body>
