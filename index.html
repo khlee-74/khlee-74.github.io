@@ -35,7 +35,18 @@
       justify-content: space-between;
       gap: 20px;
     }
-    .logo { font-size: 23px; font-weight: 800; color: #123c70; }
+    .logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
     .menu {
   display: flex;
   align-items: center;
@@ -185,7 +196,9 @@ min-width: 55px;
 <body>
   <header>
     <nav class="wrap">
-      <a class="logo" href="#">YULIM INFOTECH</a>
+      <a class="logo" href="#" aria-label="유림인포텍 홈">
+  <img src="yulimit_logo.png" alt="유림인포텍 공식 로고">
+</a>
       <div class="menu">
         <a href="#about">회사소개</a>
         <a href="#business">사업분야</a>
