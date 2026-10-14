@@ -259,22 +259,8 @@ min-width: 55px;
   object-fit: cover;
 }
 
-@media (max-width: 760px) {
-  .hero-layout {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 28px;
-  }
-
-  .hero-image {
-    width: 100%;
-  }
-
-  .hero-image img {
-    max-width: 100%;
-  }
-} 
-  .hero-layout {
+/* 메인 화면 이미지와 콘텐츠 배치 */
+.hero-layout {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -300,7 +286,9 @@ min-width: 55px;
   border-radius: 16px;
   object-fit: cover;
 }
- .business-image {
+
+/* 사업 소개 이미지 */
+.business-image {
   display: block;
   width: 100%;
   height: 255px;
@@ -309,7 +297,8 @@ min-width: 55px;
   border-radius: 10px;
   margin: 16px 0;
 }
-/* 회사 자료실 전용 디자인 */
+
+/* 회사 자료실 디자인 */
 #resources {
   background: linear-gradient(180deg, #eef5fc 0%, #ffffff 100%);
 }
@@ -359,6 +348,23 @@ min-width: 55px;
 
 #resources .card a:hover {
   text-decoration: underline;
+}
+
+/* 모바일 화면 대응 */
+@media (max-width: 760px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
 }    
   </style>
 </head>
