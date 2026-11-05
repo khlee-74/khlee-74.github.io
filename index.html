@@ -367,6 +367,159 @@ html body #resources.about {
     max-width: 100%;
   }
 }    
+
+/* ========================================
+   MY DIGITAL SPACE - Elan & Luma Portal
+======================================== */
+
+#digital-space {
+  background: linear-gradient(180deg, #f4f8fd 0%, #eaf2fb 100%);
+}
+
+.digital-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.digital-label {
+  color: #2184c7;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.digital-subtitle {
+  color: #66758a;
+  margin: 0;
+  font-size: 15px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #dce6f1;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(16, 43, 80, 0.05);
+  transition: all 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  border-color: #8bbce8;
+  box-shadow: 0 12px 28px rgba(16, 43, 80, 0.12);
+}
+
+.app-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  background: #edf5fd;
+  border-radius: 13px;
+  font-size: 25px;
+}
+
+.app-number {
+  color: #91a3b8;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.app-card h3 {
+  margin: 19px 0 7px;
+  color: #164e83;
+  font-size: 19px;
+}
+
+.app-card p {
+  flex: 1;
+  min-height: 48px;
+  margin: 0 0 20px;
+  color: #66758a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding-top: 15px;
+  border-top: 1px solid #edf1f5;
+}
+
+.app-links a {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.app-open {
+  color: #0878bd;
+}
+
+.app-github {
+  color: #66758a;
+}
+
+.app-links a:hover {
+  text-decoration: underline;
+}
+
+.digital-footer {
+  margin-top: 35px;
+  padding: 28px;
+  border-radius: 14px;
+  background: #102b50;
+  color: white;
+  text-align: center;
+}
+
+.digital-footer p {
+  margin: 5px 0;
+  color: #dce8f6;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .app-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .app-card {
+    padding: 22px;
+  }
+}   
   </style>
 </head>
 <body>
@@ -381,6 +534,7 @@ html body #resources.about {
   <a href="#hpc">HPC</a>
   <a href="#ai">인공지능</a>
   <a href="#resources">회사 자료</a>
+  <a href="#digital-space">MY DIGITAL SPACE</a>
   <a href="#contact">문의하기</a>
 </div>
     </nav>
@@ -538,6 +692,174 @@ html body #resources.about {
         </div>
       </div>
     </section>
+
+<section id="digital-space">
+  <div class="wrap">
+
+    <div class="digital-heading">
+      <div>
+        <div class="digital-label">ELAN & LUMA DIGITAL UNIVERSE</div>
+        <h2 class="section-title" style="color:#1765a0; margin-top:10px;">
+          MY DIGITAL SPACE
+        </h2>
+        <p class="digital-subtitle">
+          우리가 함께 만든 디지털 서비스와 프로젝트를 한곳에서 관리합니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="app-grid">
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">⚖️</div><span class="app-number">01</span></div>
+        <h3>YULIM Legal Guide</h3>
+        <p>법률 정보와 실무 대응을 돕는 법률 길잡이</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/yulim-legal-guide/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/yulim-legal-guide" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🤖</div><span class="app-number">02</span></div>
+        <h3>YULIM Executive AI</h3>
+        <p>경영 의사결정과 업무 혁신을 위한 AI 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/yulim-executive-ai/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/yulim-executive-ai" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">💰</div><span class="app-number">03</span></div>
+        <h3>YULIM Wealth OS</h3>
+        <p>자산 형성과 경제적 자유를 위한 개인 자산관리 도구</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/yulim-wealth-os/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/yulim-wealth-os" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🧠</div><span class="app-number">04</span></div>
+        <h3>Mind OS YULIM</h3>
+        <p>마음 관리와 자기 성장을 위한 디지털 도구</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/mind-os-yulim/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/mind-os-yulim" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">✈️</div><span class="app-number">05</span></div>
+        <h3>Travel Mate OS</h3>
+        <p>여행 계획과 여행 경험을 관리하는 여행 플랫폼</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/travel-mate-os/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/travel-mate-os" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">👨‍👩‍👦‍👦</div><span class="app-number">06</span></div>
+        <h3>Our Family 10B</h3>
+        <p>가족이 함께 만드는 경제적 기반과 10억 자산 목표</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/our-family-10b/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/our-family-10b" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">💼</div><span class="app-number">07</span></div>
+        <h3>YULIM Business Agent OS</h3>
+        <p>회사와 개인의 업무를 통합 관리하는 오프라인 업무 도구</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/yulim-business-agent-os/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/yulim-business-agent-os" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🚻</div><span class="app-number">08</span></div>
+        <h3>Toilet Go Busan</h3>
+        <p>부산의 공중화장실 정보를 편리하게 찾는 생활 서비스</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/toilet-go-busan/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/toilet-go-busan" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">📍</div><span class="app-number">09</span></div>
+        <h3>Jjam Here</h3>
+        <p>일상에서 유용하게 활용할 수 있는 간편 생활 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/jjam-here/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/jjam-here" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">📚</div><span class="app-number">10</span></div>
+        <h3>Sayno Life Guide</h3>
+        <p>세이노의 가르침을 바탕으로 한 현실적인 자기계발 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/sayno-life-guide/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/sayno-life-guide" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🇨🇳</div><span class="app-number">11</span></div>
+        <h3>Elan Chinese 1000</h3>
+        <p>중국어 핵심 표현 1,000개 학습 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/elan-chinese-1000/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/elan-chinese-1000" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🎉</div><span class="app-number">12</span></div>
+        <h3>Funny Button</h3>
+        <p>가볍게 즐기는 재미있는 인터랙티브 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/funny-button/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/funny-button" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🐍</div><span class="app-number">13</span></div>
+        <h3>Komuli Snake</h3>
+        <p>재미있게 즐기는 스네이크 게임 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/komuli-snake/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/komuli-snake" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="app-card">
+        <div class="app-top"><div class="app-icon">🚗</div><span class="app-number">14</span></div>
+        <h3>Banggu Car Game</h3>
+        <p>가볍게 즐기는 자동차 게임 프로젝트</p>
+        <div class="app-links">
+          <a class="app-open" href="https://khlee-74.github.io/banggu-car-game/" target="_blank" rel="noopener">서비스 열기 ↗</a>
+          <a class="app-github" href="https://github.com/khlee-74/banggu-car-game" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="digital-footer">
+      <h3>ELAN & LUMA DIGITAL UNIVERSE</h3>
+      <p>작은 아이디어를 현실로, 하나의 프로젝트를 새로운 가능성으로.</p>
+      <p>Our Digital Journey Continues.</p>
+    </div>
+
+  </div>
+</section>
     
     <section id="contact" class="contact">
       <div class="wrap">
